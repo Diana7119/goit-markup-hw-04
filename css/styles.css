@@ -351,7 +351,10 @@ ul {
     background: var(---tap-link-color);
 }
 
-
+.button-tap {
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%),
+        0px 4px 4px 0px rgb(0 0 0 / 25%);
+}
 
 .filter-btn {
     font-family: inherit;
@@ -417,6 +420,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 4px;
 }
 
 .about-icon {
@@ -549,8 +553,8 @@ ul {
     gap: 24px;
     justify-content: center;
     padding: 0;
-    padding-top: 8px;
-    margin-bottom: 8px;
+    margin: 8px;
+
 }
 
 
@@ -620,11 +624,14 @@ ul {
 }
 
 
-
+.customers-icon :hover {
+    fill: currentColor;
+}
 
 
 .customers-item {
-    flex-basis: calc((100% -3 * 120px) /6);
+    flex-basis: calc((100% - 120px) /6);
+    height: 88px;
 }
 
 .customers-link {
@@ -636,8 +643,7 @@ ul {
     align-items: center;
     justify-content: center;
     fill: var(---gray);
-    width: 168px;
-    height: 88px;
+
 }
 
 
@@ -645,8 +651,8 @@ ul {
 
 .customers-link:hover,
 .customers-link:focus {
-    border: 1px solid var(---tap-link-color);
-    fill: var(---tap-link-color);
+    border-color: 1px solid var(---tap-link-color);
+    color: var(---tap-link-color);
 }
 
 
@@ -766,17 +772,13 @@ ul {
 .card-list {
     margin-right: 24px;
     margin-bottom: 48px;
-    ext-decoration: none;
+    text-decoration: none;
     display: list-item;
 
 }
 
 
 
-.card-list :hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
 
 .card {
     text-decoration: none;
@@ -784,7 +786,11 @@ ul {
 }
 
 
-
+.card :hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 .items-subtitle {
     font-style: normal;
@@ -795,6 +801,7 @@ ul {
     color: var(---secondary-background-color);
     text-decoration: none;
     margin-bottom: 8px;
+
 
 }
 
